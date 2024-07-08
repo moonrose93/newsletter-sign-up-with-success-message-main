@@ -1,0 +1,68 @@
+
+
+
+.container-mobile {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of columns on mobile */
+    align-items: center; /* Center align items */
+    padding: 20px;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: 100vh;
+    gap: 50px;
+   
+  }
+  
+  .container-mobile .left {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .container-mobile .right {
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .container-mobile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .container-mobile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .container-mobile .notes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .container-mobile .notes img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .container-mobile .email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container-mobile .valid {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .container-mobile .email-input:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+  }
+  
