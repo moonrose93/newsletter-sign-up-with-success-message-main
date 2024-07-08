@@ -1,27 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import './mobile.css';
 
-import React, { useState , useEffect} from 'react';
+import React, { useState } from 'react'; // Only import what's necessary
 import ThankYou from './ThankYou';
 import Mobile from './Mobile';
 
 import iconList from './assets/images/icon-list.svg'; // Correct import statement
-
 import illustrationDesktop from './assets/images/illustration-sign-up-desktop.svg';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [thankYou, setThankYou] = useState(false);
-  
-  
+
   const handleInputValue = (e) => {
     setInputValue(e.target.value);
   }
 
   const handleSubmit = () => {
     const EmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(inputValue !== "" && EmailRegex.test(inputValue)){
+    if (inputValue !== "" && EmailRegex.test(inputValue)) {
       setThankYou(true);
     }
   }
@@ -53,7 +50,6 @@ function App() {
               <form onSubmit={handleSubmit}>
                 <input onInput={handleInputValue} value={inputValue} type='text' className='email-input' placeholder='Email address' />
                 <p className='valid' style={{ display: inputValue === "" || isValid(inputValue) ? "none" : "block" }}>Please Enter valid email</p>
-                
               </form>
             </div>
             <div className='right'>
